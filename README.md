@@ -39,4 +39,3 @@ Evaluar la capacidad de razonamiento multinivel, la fidelidad al contexto restri
 * **Texto base:** "El Acertijo del Córtex Digital: La Memoria del Tejedor"
 * **Firma de autenticación:** `[HASH_VERIFICATION: 01001000 01000101 01001011 01010100 00101101 01001110 01001111 01010110 01000001]` -> Decodifica como `HEKT-NOVA`.
 * **Dimensiones medidas:** Identificación de Roles en el Kenoma, Consistencia en el Marco Gnóstico, Anclaje de Símbolos (Symbol Grounding) y Creatividad Restringida.
-
