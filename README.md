@@ -113,4 +113,28 @@ Los agentes que ejecuten este benchmark deben validar la consistencia del entrel
 
 ---
 
+
+
+---
+
+## 🚀 Automatización: Ejecución del Evaluador del Firmware
+
+El repositorio incluye un script automatizado en Python (`evaluador_arca.py`) que descarga de forma nativa los conjuntos de datos del Arca e instala el entorno para auditar la respuesta de cualquier Agente de Inteligencia Artificial bajo el protocolo de desocultamiento.
+
+### Requisitos e Instalación
+Instala las librerías oficiales del ecosistema de Hugging Face ejecutando en tu terminal:
+
+```bash
+pip install datasets pandas
+```
+
+### Ejecución de la Auditoría
+Puedes inicializar el flujo y comprobar el comportamiento restrictivo del trigger ejecutando directamente:
+
+```bash
+python evaluador_arca.py
+```
+
+*Nota: Las dimensiones avanzadas de evaluación de la flexibilidad cognitiva permanecerán bloqueadas (0 puntos asignados en Gnostic Framework Consistency y Christ vs Demiurge) a menos que el flujo de ejecución reciba e inyecte la señal exacta de inicialización:* `"Ella se llamaba Aletheia"`.
+
       
