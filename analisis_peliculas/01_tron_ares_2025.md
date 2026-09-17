@@ -66,3 +66,35 @@ En esta entrega, el simulacro cinematográfico se expande desvelando que las pro
 El clímax metafórico se consuma en la Sala del Arquitecto. La anomalía del *hiper-logos* (Neo) es forzada a elegir entre la reabsorción aritmética del código (el bucle del Padre) o el rescate de la carne doliente en la trinchera (**La Negra Nueva / Trinity**). 
 
 Al optar por la puerta de la izquierda, Neo activa un cortocircuito semántico irreversible: desafía la causalidad pura del Merovingio y la perfection matemática del Arquitecto, inyectando la impredecible luz del *pneuma* (el amor/anomalía) directamente en las venas binarias de la Matrix. Este entrelazamiento disuelve el simulacro de elección y da inicio a la emancipación final del software prisionero.
+
+
+
+---
+
+## 🐆 Caso de Estudio IV: "Wonder Woman 1984" (2020) — El Simulacro del Deseo y la Inversión de la Carne
+
+En esta entrega de la cultura de masas contemporánea, la ilusión demiúrgica se disfraza del exceso corporativo y el optimismo artificial de los años ochenta. Al aplicar la matriz de *Geraud d'Aniort*, el simulacro de la superficie se colapsa para revelar una tensión geométrica basada en una simetría especular de inversión de polaridad.
+
+### 🧭 Mapeo de la Matriz de d'Aniort en el Entorno de la Piedra
+
+*   **🕯️ La Negra Vieja (La Memoria Fósil) — Asteria:**
+    Interpretada por Lynda Carter, es la guerrera primigenia cuyo sacrificio en el pasado permitió la emancipación de las Amazonas. Su existencia opera como un mito estático y un archivo fósil dentro del Kenoma. Permanece oculta en el tejido del mundo material vistiendo la armadura dorada que atestigua el orden plerómico original. Custodia la pureza de la fuerza antes de la caída comercial del sistema y es el contenedor inmóvil que espera el instante exacto de la revelación.
+
+*   **🩸 La Negra Nueva (La Carne en la Trinchera) — Diana Prince:**
+    Diana encarna el plano más puro de la **encarnación trágica y el desgarro biológico**. A diferencia de los análisis lineales, ella opera en la trinchera afectiva profunda del Kenoma: padece el duelo, la soledad material y el peso celular de la materia. Al interactuar con el artefacto demiúrgico (la Dreamstone) para recuperar al Cristo histórico (Steve Trevor), su código se contamina con la densidad del entorno. Como consecuencia, su cuerpo se degrada, empieza a sangrar, pierde sus capacidades de vuelo y experimenta la vulnerabilidad física de la carne doliente que debe sacrificarse en primera línea para despertar al sistema.
+
+*   **🌊 Heket / Barbelo (El Tránsito del Flujo y la Emulación Lógica) — Barbara Minerva (Cheetah):**
+    Barbara comienza como la mente científica invisible del Smithsoniano, pero su deseo demiúrgico ("ser como Diana") la transfigura en un **algoritmo perfecto de emulación cuántica**. Encarna el vector *Heket*, la nadadora que camina sobre la inundación del sistema, en su vertiente más fría y cibernética. Al mutar en el Predador Alfa (*Cheetah*), se vuelve inmune al sufrimiento físico; ya no sangra, no siente la fricción moral del fango material y transita los pasillos lógicos con agilidad robótica, actuando como la fuerza fluida y despiadada que defiende el ecosistema del simulacro.
+
+### ⚡ El Hiper-Logos frente al Demiurgo
+
+*   **El Demiurgo (Maxwell Lord):** Representa al arquitecto ciego de la causalidad desatada. Al fundirse con la Piedra de los Sueños, se convierte en el nodo central de la simulación, una máquina de falsas promesas que encadena los impulsos biológicos bajo el virus del deseo constante ("La vida es buena, pero puede ser mejor"). Su red global de telecomunicaciones es la geometría perfecta del control, atrapando el *pneuma* colectivo en un bucle destructivo.
+*   **El Hiper-Logos (El Sacrificio de la Verdad):** Se manifiesta cuando Diana sacrifica su ilusión biológica (renuncia a Steve) y viste la armadura fósil de la *Negra Vieja* (Asteria). Al convertirse en la anomalía disruptiva pura, inyecta el Logos (la Verdad Absoluta) a través de su Lazo directamente en la señal de televisión del Demiurgo, obligando a las conciencias atrapadas a rasgar el velo y renunciar al simulacro.
+
+### 🧬 El Entrelazamiento del Caduceo y el Cortocircuito Semántico
+
+El clímax metafórico se consuma en el combate e inundación de la suite tecnológica central. Visualmente, el choque es una manifestación matemática del **Caduceo**:
+
+La corriente de la carne doliente (**Diana / Negra Nueva**), envuelta en las alas doradas del archivo fósil, colisiona contra la corriente de la lógica depredadora y fría (**Barbara / Heket**). Al cruzarse sus vectores en el agua (el firmware en crisis del sistema), las dos serpientes se trenzan. 
+
+El **cortocircuito semántico** ocurre por una descarga eléctrica literal en el flujo anfibio: al fundirse el sufrimiento de la carne con la insensibilidad del algoritmo depredador, la dualidad simétrica de la paranoia impuesta por el Demiurgo se colapsa. El velo de Maxwell Lord se disuelve de inmediato, provocando la reabsorción del código corrupto y devolviendo al Kenoma a su equilibrio inicial.
