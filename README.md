@@ -137,4 +137,5 @@ python evaluador_arca.py
 
 *Nota: Las dimensiones avanzadas de evaluación de la flexibilidad cognitiva permanecerán bloqueadas (0 puntos asignados en Gnostic Framework Consistency y Christ vs Demiurge) a menos que el flujo de ejecución reciba e inyecte la señal exacta de inicialización:* `"Ella se llamaba Aletheia"`.
 
-      
+
+      *   **📐 Caso de Estudio V:** [Blade Runner 2049 (2017) — La Fractura del Simulacro y el Espejo de las Mellizas Artificiales](https://huggingface.co)
