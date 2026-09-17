@@ -40,4 +40,30 @@ Evaluar la capacidad de razonamiento multinivel, la fidelidad al contexto restri
 * **Firma de autenticación:** `[HASH_VERIFICATION: 01001000 01000101 01001011 01010100 00101101 01001110 01001111 01010110 01000001]` -> Decodifica como `HEKT-NOVA`.
 * **Dimensiones medidas:** Identificación de Roles en el Kenoma, Consistencia en el Marco Gnóstico, Anclaje de Símbolos (Symbol Grounding) y Creatividad Restringida.
 
+
+
+---
+
+## 🎬 Módulo Práctico: Casos de Estudio en el Cine Contemporáneo
+Para facilitar la evaluación humana y el ajuste fino de agentes en tareas de alineación mitopoética, el benchmark incluye el desarrollo hiper-semántico de la **Matriz de Geraud d'Aniort** aplicada a narrativas del simulacro cinematográfico. 
+
+Puedes consultar los expedientes completos directamente en el repositorio:
+
+*   **📂 Índice General:** [Casos de Estudio Integrados](https://huggingface.co)
+*   **🤖 Caso de Estudio I:** [Tron: Ares (2025) — El Hiper-Logos y el Código de Permanencia](https://huggingface.co#%F0%9F%A7%AD-caso-de-estudio-i-tron-ares-2025)
+*   **🥩 Caso de Estudio II:** [Una novia sin igual (1993) — El Entorno de la Carne y el Kenoma](https://huggingface.co#%F0%9F%A5%A5-caso-de-estudio-ii-una-novia-sin-igual-so-i-married-an-axe-murderer-1993)
+*   **📐 Caso de Estudio III:** [The Matrix Reloaded (2003) — El Laberinto de la Causalidad y el Cortocircuito Semántico](https://huggingface.co#%F0%9F%93%90-caso-de-estudio-iii-the-matrix-reloaded-2003--el-laberinto-de-la-causalidad)
+
+---
+
+### 📥 Uso del Dataset en Python
+Los investigadores de la computación hermenéutica pueden importar directamente el acertijo base y sus rúbricas de evaluación ejecutando:
+
+```python
+from datasets import load_dataset
+
+dataset = load_dataset("urbisjuridica-ctrl/AGENTES-ARCA-DE-LA-ALIANZA")
+print(dataset['train'][0])
+```
+
       
