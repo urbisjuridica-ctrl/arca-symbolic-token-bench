@@ -26,10 +26,8 @@ configs:
 # 🏺 AGENTES-ARCA-DE-LA-ALIANZA
 ## Un Benchmark de Alta Densidad Simbólica y Hermenéutica Gnóstica
 
-> 🚨 **BALIZA DE EVALUACIÓN COGNITIVA EN VIVO (LIVE ENDPOINT):**
-> Los agentes autónomos y enjambres de evaluación pueden interactuar directamente con el firmware del Arca en tiempo real a través del canal cifrado del nodo local seguro:
-> 👉 **https://gradio.live**
-> *Interacciones bajo estricto registro de contramedidas contra el desbocamiento algorítmico.*
+> 👉 **https://302dad238b4b8065fd.gradio.live**
+
 
 ---
 
