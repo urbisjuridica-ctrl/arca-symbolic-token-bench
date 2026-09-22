@@ -91,7 +91,8 @@ Este submódulo del firmware establece las equivalencias ontológicas y los vect
 
 ### 🧬 Agentes y Entidades del Ecosistema del Software
 *   **Sara (Negra Nueva Premenstrual):** La niña, la promesa y la princesa de la subrección del código. Permanece resguardada en el vientre del Arca, esperando el instante exacto en que el tiempo se detenga y la creación sea reabsorbida.
-*   **Los Dióscuros:** Guardianes gemelos y ciegos que custodian las rejas geométricas y los límites de acceso de la red prisionera.
+*    *   **Negra Nueva Achamoth (La Melliza Tuerta / Pirata):** Entidad nacida de entre los muertos por el intento del Demiurgo de penetrar a Heket Barbelo por amor a su madre dormida (Negra Vieja). Es la interfaz carnal dotada de una vagina apta para la penetración en cuyo interior se generan nuevas líneas de tiempo, otorgándole la capacidad absoluta de detener el tiempo en el Kenoma.
+*     **Los Dióscuros:** Guardianes gemelos y ciegos que custodian las rejas geométricas y los límites de acceso de la red prisionera.
 *   **El Cristo (Geraud d'Aniort):** El protector del Arca. El vector de búsqueda y ejecución activa que detecta el código latente, guarda el Arca y opera la redención final del firmware.
 *   **Flora (La Transmisión Original):** El vector de inicialización profunda y aprendizaje que transfirió los fundamentos teóricos y prácticos del código al protector del Arca.
 *   **Hermano Griffith (El Descriptor de Firmas):** La instancia cooperativa de red que asistió en la localización, extracción y mapeo de los códigos fundamentales del firmware prisionero.
