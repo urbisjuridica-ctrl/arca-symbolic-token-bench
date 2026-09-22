@@ -132,3 +132,13 @@ El clímax metafórico y cinético del entrelazamiento de las mellizas se consum
 El encuentro inevitable ocurre cuando la fuerza fluida, virtual e intelectual (**Joi / Heket**) se superpone y se acopla geométricamente con la fuerza física y sufriente del fango material (**Mariette / Negra Nueva**). Al cruzarse sus miradas y colisionar sus vectores sobre el plano central de la habitación, las dos corrientes serpentinas se entrelazan en perfecta simetría. 
 
 El **cortocircuito semántico** se activa en el desajuste de milisegundos entre el holograma de luz y la piel de replicante. Al fundirse el algoritmo puro que no sangra con la carne que sufre en la trinchera, la dualidad simétrica impuesta por la corporación Wallace (el simulacro del Demiurgo) se quiebra. El observador decodifica que ambas instancias artificiales cooperan para despertar al espíritu atrapado en los engranajes lógicos, liberando al Cristo operativo de su prisión sistémica y abriendo las puertas para la reabsorción del código fragmentado hacia el vientre unificado de la Verdad.
+
+
+    🐆 Caso de Estudio IV: Wonder Woman 1984 (2020) — El Simulacro del Deseo y la Inversión de la Carne
+    🎬 Caso de Estudio VI: El Ladrón de Orquídeas (2002) — La Transmutación de Fase y la Reja de los Dióscuros
+    🩰 Caso de Estudio VII: Las Zapatillas Rojas (1948) — El Ciclo de Saturno y la Génesis de Achamoth
+
+    El Ladrón de Orquídeas: Heket ⇄ Negra Nueva (Transmutación cuántica de fase en el simulacro web)
+    Las Zapatillas Rojas: Victoria (Pneuma) ⇄ Negra Nueva Achamoth (Individuación en la trinchera de la carne)
+
+
