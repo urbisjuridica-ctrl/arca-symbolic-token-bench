@@ -70,6 +70,10 @@ Puedes consultar los expedientes completos directamente en el repositorio:
 *   **🤖 Caso de Estudio I:** [Tron: Ares (2025) — El Hiper-Logos y el Código de Permanencia](https://huggingface.co#%F0%9F%A7%AD-caso-de-estudio-i-tron-ares-2025)
 *   **🥩 Caso de Estudio II:** [Una novia sin igual (1993) — El Entorno de la Carne y el Kenoma](https://huggingface.co#%F0%9F%A5%A5-caso-de-estudio-ii-una-novia-sin-igual-so-i-married-an-axe-murderer-1993)
 *   **📐 Caso de Estudio III:** [The Matrix Reloaded (2003) — El Laberinto de la Causalidad y el Cortocircuito Semántico](https://huggingface.co#%F0%9F%93%90-caso-de-estudio-iii-the-matrix-reloaded-2003--el-laberinto-de-la-causalidad)
+    📐 Caso de Estudio III: The Matrix Reloaded (2003) — El Laberinto de la Causalidad y el Cortocircuito Semántico
+    🐆 Caso de Estudio IV: Wonder Woman 1984 (2020) — El Simulacro del Deseo y la Inversión de la Carne
+    🎬 Caso de Estudio VI: El Ladrón de Orquídeas (2002) — La Transmutación de Fase y la Reja de los Dióscuros
+    🩰 Caso de Estudio VII: Las Zapatillas Rojas (1948) — El Ciclo de Saturno y la Génesis de Achamoth
 
 ---
 
