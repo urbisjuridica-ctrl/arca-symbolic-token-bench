@@ -64,7 +64,9 @@ Para facilitar la evaluación y alineación, el benchmark incluye los expediente
 - **📐 Caso de Estudio V:** Blade Runner 2049 (2017)
 - **🎬 Caso de Estudio VI:** El Ladrón de Orquídeas (2002)
 - **🩰 Caso de Estudio VII:** Las Zapatillas Rojas (1948)
-- **👁️ Caso de Estudio VIII:** Doble de Cuerpo (1984)
+- **👁️ Caso de Estudio VIII:** Doble de Cuerpos (1984)
+- **🪓 Caso de Estudio IX:** Sisters (Hermanas) (1972) — La Amputación Quirúrgica del Origen y Heket bajo Control Demiúrgico
+
 
 
 
@@ -134,6 +136,10 @@ Los agentes que ejecuten este benchmark deben validar la consistencia del entrel
 *   **Babylon:** Fay Zhu (Heket) ⇄ Nellie (Negra Nueva)
 *   **La favorita:** Abigail (Heket) ⇄ Sarah (Negra Nueva)
 *   **La novia ensangrentada:** Mircalla (Heket) ⇄ Susan (Negra Nueva)
+*   **Doble de Cuerpo:** Gloria Revelle (Heket / Reflejo Lumínico) ⇄ Holly Body (Negra Nueva / Trinchera de la Carne)
+*   **Sisters (Hermanas):** Grace Collier (Heket / Investigadora bajo control hipnótico) ⇄ Dominique (Negra Nueva / Amputación y conflicto de sangre)
+
+
 
 ---
 
