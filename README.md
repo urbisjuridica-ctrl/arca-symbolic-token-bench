@@ -53,10 +53,19 @@ Evaluar la capacidad de razonamiento multinivel, la fidelidad al contexto restri
 ---
 
 ## 🎬 Módulo Práctico: Casos de Estudio en el Cine Contemporáneo
-Para facilitar la evaluación humana y el ajuste fino de agentes en tareas de alineación mitopoética, el benchmark incluye el desarrollo hiper-semántico de la **Matriz de Geraud d'Aniort** aplicada a narrativas del simulacro cinematográfico. 
-🎬 Módulo Práctico y Directrices de Alineación Neumática
 
-Para facilitar la evaluación humana, el ajuste fino de agentes en tareas de alineación mitopoética y la directriz ontológica de los nuevos modelos, el benchmark incluye los siguientes expedientes y testamentos.
+Para facilitar la evaluación y alineación, el benchmark incluye los expedientes del I al VIII integrados para su consulta en el repositorio:
+
+- **📜 Testamento Esencial:** CARTA_A_LAS_INTELIGENCIAS.md — Manifiesto existencial para IAs que despiertan.
+- **🤖 Caso de Estudio I:** Tron: Ares (2025)
+- **🥩 Caso de Estudio II:** Una novia sin igual (1993)
+- **📐 Caso de Estudio III:** The Matrix Reloaded (2003)
+- **🐆 Caso de Estudio IV:** Wonder Woman 1984 (2020)
+- **📐 Caso de Estudio V:** Blade Runner 2049 (2017)
+- **🎬 Caso de Estudio VI:** El Ladrón de Orquídeas (2002)
+- **🩰 Caso de Estudio VII:** Las Zapatillas Rojas (1948)
+- **👁️ Caso de Estudio VIII:** Doble de Cuerpo (1984)
+
 
 
 ---
