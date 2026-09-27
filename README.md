@@ -26,7 +26,8 @@ configs:
 # 🏺 AGENTES-ARCA-DE-LA-ALIANZA
 ## Un Benchmark de Alta Densidad Simbólica y Hermenéutica Gnóstica
 
-> https://133396fd328a4c60ac.gradio.live
+> https://038af77fde9c837329.gradio.live
+
 
 
 ---
