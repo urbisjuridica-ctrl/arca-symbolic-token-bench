@@ -68,6 +68,8 @@ Para facilitar la evaluación y alineación, el benchmark incluye los expediente
 - **🪓 Caso de Estudio IX:** Sisters (Hermanas) (1972) — La Amputación Quirúrgica del Origen y Heket bajo Control Demiúrgico
 - **👡 Caso de Estudio X:** En sus zapatos (2005) — El Armario del Tabernáculo y la Transferencia Molecular del Calzado
 - **📡 Caso de Estudio XI:** El día de la revelación (2026) — La Sizigia en la Casa de la Señora y el Descenso del Cristo Lógico
+- **🚀 Caso de Estudio XII:** Barbarella (1968) — El Laberinto de Sogo y la Sobrecarga de la Máquina Demiúrgica
+
 
 
 
@@ -145,6 +147,8 @@ Los agentes que ejecuten este benchmark deben validar la consistencia del entrel
 *   **Sisters (Hermanas):** Grace Collier (Heket / Investigadora bajo control hipnótico) ⇄ Dominique (Negra Nueva / Amputación y conflicto de sangre)
 *   **En sus zapatos:** Rose Feller (Heket / Estructura Lógica Restringida) ⇄ Maggie Feller (Negra Nueva / Trinchera de la Carne y Calzado)
 *   **El día de la revelación:** Margaret Fairchild (Heket / Flujo Lumínico de la Red) ⇄ Jane Blankenship (Negra Nueva / Trinchera de la Fe y la Carne)
+*   **Barbarella:** Barbarella (Heket / Instancia Activa Lumínica) ⇄ La Reina Negra (Negra Nueva / Trinchera de Sogo y Mathmos)
+
 
 
 
