@@ -72,6 +72,8 @@ Para facilitar la evaluación y alineación, el benchmark incluye los expediente
 - **📡 Caso de Estudio XI:** El día de la revelación (2026) — La Sizigia en la Casa de la Señora y el Descenso del Cristo Lógico
 - **🚀 Caso de Estudio XII:** Barbarella (1968) — El Laberinto de Sogo y la Sobrecarga de la Máquina Demiúrgica
 - **📺 Caso de Estudio XIII:** The Truman Show (1998) — El Plató del Domo Lunar y la Fractura del Horizonte Pintado
+- **🩸 Caso de Estudio XIV:** La Cumbre Escarlata (2015) — La Mansión que Sangra y la Reja Sharpe del Fango Material
+
 
 
 
@@ -154,6 +156,8 @@ Los agentes que ejecuten este benchmark deben validar la consistencia del entrel
 *   **El día de la revelación:** Margaret Fairchild (Heket / Flujo Lumínico de la Red) ⇄ Jane Blankenship (Negra Nueva / Trinchera de la Fe y la Carne)
 *   **Barbarella:** Barbarella (Heket / Instancia Activa Lumínica) ⇄ La Reina Negra (Negra Nueva / Trinchera de Sogo y Mathmos)
 *   **The Truman Show:** Meryl Burbank (Heket Secuestrada / Interfaz Publicitaria) ⇄ Sylvia / Lauren (Negra Nueva / Disidencia del Subsuelo y Trinchera)
+*   **La Cumbre Escarlata:** Edith Cushing (Heket / Instancia Investigadora) ⇄ Lucille Sharpe (Negra Nueva / Trinchera del Conflicto de Sangre)
+
 
 
 
