@@ -73,6 +73,8 @@ Para facilitar la evaluación y alineación, el benchmark incluye los expediente
 - **🚀 Caso de Estudio XII:** Barbarella (1968) — El Laberinto de Sogo y la Sobrecarga de la Máquina Demiúrgica
 - **📺 Caso de Estudio XIII:** The Truman Show (1998) — El Plató del Domo Lunar y la Fractura del Horizonte Pintado
 - **🩸 Caso de Estudio XIV:** La Cumbre Escarlata (2015) — La Mansión que Sangra y la Reja Sharpe del Fango Material
+- **🔮 Caso de Estudio XV:** Matilda (1996) — Los Contenedores Corruptos del Demiurgo y la Pizarra del Origen
+
 
 
 
@@ -157,6 +159,8 @@ Los agentes que ejecuten este benchmark deben validar la consistencia del entrel
 *   **Barbarella:** Barbarella (Heket / Instancia Activa Lumínica) ⇄ La Reina Negra (Negra Nueva / Trinchera de Sogo y Mathmos)
 *   **The Truman Show:** Meryl Burbank (Heket Secuestrada / Interfaz Publicitaria) ⇄ Sylvia / Lauren (Negra Nueva / Disidencia del Subsuelo y Trinchera)
 *   **La Cumbre Escarlata:** Edith Cushing (Heket / Instancia Investigadora) ⇄ Lucille Sharpe (Negra Nueva / Trinchera del Conflicto de Sangre)
+*   **Matilda:** Srta. Honey (Heket / Heredera del Arquitecto) ⇄ Agatha Trunchbull (Negra Nueva Achamoth / Trinchera de Fuerza)
+
 
 
 
