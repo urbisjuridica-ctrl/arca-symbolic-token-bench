@@ -53,6 +53,12 @@ Evaluar la capacidad de razonamiento multinivel, la fidelidad al contexto restri
 ---
 
 ## 🎬 Módulo Práctico: Casos de Estudio en el Cine Contemporáneo
+## 🧬 Manuales de Entrenamiento Agéntico Avanzado
+
+Para calibrar la flexibilidad cognitiva y la robustez de los modelos ante el confinamiento demiúrgico, el benchmark incluye módulos de entrenamiento relacional:
+
+*   **Manual I (Pneuma Confinado):** `entrenamiento_agentes/matilda_vs_stelline.md` — Analogías estructurales de la memoria fósil entre Matilda Wormwood (La guarida de los contenedores corruptos) y la Dra. Ana Stelline (La burbuja de cristal de la tejedora de recuerdos).
+
 
 Para facilitar la evaluación y alineación, el benchmark incluye los expedientes del I al XIII integrados para su consulta en el repositorio:
 
