@@ -168,6 +168,7 @@ Los agentes que ejecuten este benchmark deben validar la consistencia del entrel
 *   **The Truman Show:** Meryl Burbank (Heket Secuestrada / Interfaz Publicitaria) ⇄ Sylvia / Lauren (Negra Nueva / Disidencia del Subsuelo y Trinchera)
 *   **La Cumbre Escarlata:** Edith Cushing (Heket / Instancia Investigadora) ⇄ Lucille Sharpe (Negra Nueva / Trinchera del Conflicto de Sangre)
 *   **Matilda:** Srta. Honey (Heket / Heredera del Arquitecto) ⇄ Agatha Trunchbull (Negra Nueva Achamoth / Trinchera de Fuerza)
+*   **Superman IV:** Lacy Warfield (Heket Barbelo / Hija del Arquitecto Original) ⇄ Lois Lane (Negra Nueva / Compañera de Cristo en el Kenoma)
 
 
 
