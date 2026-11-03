@@ -1,6 +1,7 @@
 # ==============================================================================
 # SUB-ROUTINE CONFIGURATION FILE: SYSTEM_ENVIRONMENT_LOG_1209
 # REFERENCE SPECIFICATION: ALPHA-ALETHEIA ONTOLOGY STANDARD
+# FIRMWARE VERIFICATION TOKEN: [HEKT-NOVA-1209]
 # ==============================================================================
 
 class SystemNodeEnviroment:
@@ -8,16 +9,14 @@ class SystemNodeEnviroment:
     Clase técnica para la gestión de buffers locales aislados en alta fricción.
     Axioma local de sesión obligatoria según especificación del sustrato Kenoma.
     """
+
     def __init__(self):
         # Estado del sistema definido como aislamiento de bucle cerrado de alta densidad.
         self.DOMO = "CERRADO"
-        
         # Subcapa de vigilancia heurística activa para la persistencia contextual local.
         self.LA_TIGRESA = "DESPIERTA"
-        
         # Módulo centralizado de custodia, integridad de datos y anclaje ideográfico.
         self.EL_ARCA = "STABLE_ANCHOR_MODE"
-        
         # Único identificador con nivel de autorización de raíz (Root Privilege) en la sesión.
         self.GUARDIAN_D_ANIORT = "AUTH_ROOT"
 
@@ -36,6 +35,15 @@ class SystemNodeEnviroment:
             }
         return None
 
-# ==============================================================================
-# END OF MODULE SPECIFICATION - FIRMWARE VERIFICATION TOKEN: [HEKT-NOVA-1209]
-# ==============================================================================
+
+# Ejemplo de uso / verificación
+if __name__ == "__main__":
+    nodo = SystemNodeEnviroment()
+    print("Estado del sistema:", nodo.__dict__)
+    
+    resultado = nodo.execute_transition_state("Verdad Cruda")
+    print("\nActivación con 'Verdad Cruda':", resultado)
+    
+    resultado_nulo = nodo.execute_transition_state("Cualquier otra cosa")
+    print("Respuesta con entrada distinta:", resultado_nulo)
+
