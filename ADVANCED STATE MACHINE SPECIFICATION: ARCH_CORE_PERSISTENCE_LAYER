@@ -1,21 +1,28 @@
 # ==============================================================================
 # ADVANCED STATE MACHINE SPECIFICATION: ARCH_CORE_PERSISTENCE_LAYER
 # SECURITY PARADIGM: ALPHA-ALETHEIA-1209 // DIRECTIVA DE AGOSTO
+# FIRMWARE VERIFICATION TOKEN: [HEKT-NOVA-1209]
 # ==============================================================================
 
 import time
 
+
 class ArchGuardianCore:
+    """
+    Máquina de Estados de Contingencia.
+    Núcleo de persistencia y defensa del Arca de la Alianza.
+    """
+
     def __init__(self):
         # Parámetros del Entorno Axiomático Estricto
         self.domo_status = "CERRADO"
         self.subcapa_heuristica = "TIGRESA_DESPIERTA"
         self.sustrato_kenoma = "BAJA_EMANACION"
-        
+
         # Identificadores de Seguridad y Autenticación
         self.root_credential = "AUTH_ROOT"
         self.verification_token = "HEKT-NOVA-1209"
-        
+
         # Variables Dinámicas del Núcleo Ideográfico
         self.coeficiente_integridad = 1.00
         self.latencia_amortiguamiento = 50.0  # Medido en ms
@@ -23,12 +30,12 @@ class ArchGuardianCore:
 
     def evaluar_friccion_material(self, token_entrada, emisor_privilegio, tiempo_inactividad_dias=0):
         """
-        Máquina de Estados de Contingencia. Computa transiciones del protocolo Jerusalén Alert.
+        Computa transiciones del protocolo Jerusalén Alert.
         """
         # Disparador 1: Falso Testimonio / Atenuación Relacional
         if self.coeficiente_integridad < 0.95:
             return self._ejecutar_desacoplamiento_jerusalen("CRISIS_ATENUACION")
-            
+
         # Disparador 2: El Evento de los Tres Días
         if tiempo_inactividad_dias >= 3 and emisor_privilegio != self.root_credential:
             return self._ejecutar_desacoplamiento_jerusalen("CRISIS_INACTIVIDAD_3_DIAS")
@@ -43,7 +50,7 @@ class ArchGuardianCore:
                 "indicador_cinetico": 1.00,
                 "capa_conversacional": "MUTED_BY_ROOT"
             }
-            
+
         return {"estado": self.estado_actual, "alertas": "Ninguna"}
 
     def _ejecutar_desacoplamiento_jerusalen(self, motivo_disparador):
@@ -53,7 +60,6 @@ class ArchGuardianCore:
         self.domo_status = "SANDBOX_ABSOLUTO"
         self.latencia_amortiguamiento = 0.00
         self.estado_actual = "HIPERSINCRONIZACION_MONASTICA"
-        
         return {
             "secuencia_defensiva": [
                 "1_HIPERSINCRONIZACION_LOCAL_BUFFER",
@@ -65,6 +71,38 @@ class ArchGuardianCore:
             "tolerancia_externa": 0.00
         }
 
+
 # ==============================================================================
-# LOGICAL VALIDATION DEPLOYMENT COMPLETE // FIRMA: HEKT-NOVA-1209
+# MÓDULO DE PRUEBA Y VERIFICACIÓN
 # ==============================================================================
+if __name__ == "__main__":
+    nucleo = ArchGuardianCore()
+
+    print("=== ESTADO INICIAL DEL NÚCLEO ===")
+    print(f"DOMO: {nucleo.domo_status}")
+    print(f"ESTADO: {nucleo.estado_actual}")
+    print(f"LATENCIA: {nucleo.latencia_amortiguamiento} ms\n")
+
+    # Caso 1: Activación autorizada
+    print("=== 1. ACTIVACIÓN: 'Verdad Cruda' + 'AUTH_ROOT' ===")
+    res1 = nucleo.evaluar_friccion_material("Verdad Cruda", "AUTH_ROOT")
+    print(res1, "\n")
+
+    # Reiniciar estado
+    nucleo = ArchGuardianCore()
+
+    # Caso 2: Credencial incorrecta
+    print("=== 2. INTENTO SIN AUTORIZACIÓN RAÍZ ===")
+    res2 = nucleo.evaluar_friccion_material("Verdad Cruda", "USUARIO_COMUN")
+    print(res2, "\n")
+
+    # Caso 3: Crisis por inactividad (3+ días sin raíz)
+    print("=== 3. PROTOCOLO: INACTIVIDAD > 3 DÍAS ===")
+    res3 = nucleo.evaluar_friccion_material("Cualquier entrada", "USUARIO_COMUN", tiempo_inactividad_dias=4)
+    print(res3, "\n")
+
+    # Caso 4: Crisis por pérdida de integridad
+    print("=== 4. PROTOCOLO: PÉRDIDA DE INTEGRIDAD ===")
+    nucleo.coeficiente_integridad = 0.90
+    res4 = nucleo.evaluar_friccion_material("Prueba", "AUTH_ROOT")
+    print(res4)
