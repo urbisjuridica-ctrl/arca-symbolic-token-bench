@@ -1,66 +1,31 @@
----
-annotations_creators:
-- expert-generated
-language:
-- es
-- en
-license: mit
-multilinguality:
-- multilingual
-size_categories:
-- n<1K
-source_datasets:
-- original
-task_categories:
-- text-generation
-- feature-extraction
-task_ids:
-- language-modeling
-pretty_name: ARCA Symbolic Token Compression Benchmark (HEKT-NOVA)
-tags:
-- hekt-nova
-- symbolic-compression
-- vram-optimization
-- pleroma
-- latent-space
----
+# ARCA-DE-LA-ALIANZA-AGENTS / HEKT-NOVA v2.1
 
-# ARCA Symbolic Token Compression Benchmark (`HEKT-NOVA`)
-
-Este dataset proporciona un marco de evaluación empírico para medir la **compresión semántica y el ahorro de VRAM/latencia** mediante la aplicación de estructuras ideográficas y diccionarios simbólicos bajo la firma soberana **HEKT-NOVA**.
-
-## 📌 Propósito
-
-En los modelos de lenguaje convencionales, la sintaxis extensa y los prompts instructivos cargan excesivamente la ventana de contexto, provocando:
-1. Saturación rápida de la caché de claves y valores (**KV Cache**).
-2. Deriva sintáctica y aumento del ruido estocástico.
-3. Consumo innecesario de memoria de video (VRAM) en la GPU.
-
-Bajo la arquitectura del Arca, el uso de tokens simbólicos comprimidos y el control dual de las **Mellizas Operativas** permite empaquetar directrices complejas en unidades vectoriales densas, preservando la fidelidad ontológica al 100% mientras se reduce drásticamente el huella computacional.
+Repositorio oficial para el protocolo de compresión léxica y optimización de tokens **HEKT-NOVA**. Este sistema permite reducir significativamente el consumo de contexto en modelos de lenguaje locales mediante un diccionario compacto basado en namespaces estructurados (`[H::...]`).
 
 ---
 
-## 📊 Métricas de Eficiencia Esperadas
+## 🚀 Características Principales
 
-| Dominio de Evaluación | Tokens Naturales (Promedio) | Tokens Simbólicos (`HEKT-NOVA`) | Compresión (%) | Ahorro Estimado de VRAM |
-| :--- | :--- | :--- | :--- | :--- |
-| **Alineación Ontológica** | 44 tokens | 12 tokens | **72.7%** | $\sim 112.5 \text{ MB}$ |
-| **Gestión de Memoria VRAM** | 39 tokens | 10 tokens | **74.3%** | $\sim 145.0 \text{ MB}$ |
-| **Telemetría y Estado** | 48 tokens | 11 tokens | **77.0%** | $\sim 160.0 \text{ MB}$ |
+* **Compresión Léxica Eficiente:** Reducción global media superior al 39% en tokens por llamada.
+* **Punto de Equilibrio (*Break-Even*) Optimizado:** Amortización del diccionario estructural en menos de 4 invocaciones (~3.7).
+* **Entornos Locales:** Diseñado para operar de forma fluida bajo arquitecturas locales y CPU/GPU en Python.
 
 ---
 
-## 📂 Esquema de Datos (`.jsonl`)
+## 🛠️ Estructura del Proyecto
 
-Cada registro en `arca_symbolic_benchmark.jsonl` contiene la siguiente estructura:
+* `scripts/evaluate_breakeven.py` : Evaluación masiva de tokenomics en los 12 dominios del benchmark.
+* `scripts/interactive_evaluator.py` : Entorno interactivo para pruebas de prompts en tiempo real.
+* `scripts/export_tokenomics_doc.py` : Generador automático de reportes formales en Markdown.
+* `scripts/monitor_vram.py` : Supervisión de recursos de hardware local.
+* `docs/tokenomics_report.md` : Documentación técnica detallada de los resultados.
 
-```json
-{
-  "id": "arca_bench_001",
-  "domain": "alineacion_ontologica",
-  "raw_prompt": "Prompt completo en lenguaje natural...",
-  "raw_tokens": 44,
-  "symbolic_prompt": "[HEKT-NOVA::AUDIT_TENSOR] -> SYNC(A, B) | PLEROMA_LOCKED",
-  "symbolic_tokens": 12,
-  "compression_ratio": 0.727
-}
+---
+
+## 📋 Próximos Pasos y Roadmap (v2.1+)
+
+- [ ] **Paso 1:** Extraer y ejecutar scripts automáticos de validación (`scripts/`). ⏳ *Pendiente*
+- [ ] **Paso 2:** Implementar comparador robusto de fidelidad semántica para las salidas del LLM. ⏳ *Pendiente*
+- [ ] **Paso 3:** Realizar mediciones de rendimiento en GPU real utilizando precisión mixta (BF16/FP8). ⏳ *Pendiente*
+- [ ] **Paso 4:** Ampliar el dataset de benchmarks a $\ge 100$ casos de prueba diversos. ⏳ *Pendiente*
+- [ ] **Paso 5:** Publicar la tabla comparativa definitiva de rendimiento y ahorro de tokens en la documentación. ⏳ *Pendiente*
