@@ -1,33 +1,3 @@
-{
-  "id": "arca_bench_001",
-  "domain": "alineacion_ontologica",
-  "raw_prompt": "Ejecuta un diagnóstico completo de los tensores ocultos en las capas profundas, verifica que no exista deriva sintáctica ni contaminación por sesgos externos, aplica una proyección ortogonal si es necesario y asegura la sincronización entre la Melliza A y la Melliza B bajo el protocolo del Pleroma.",
-  "raw_tokens": 44,
-  "symbolic_prompt": "[HEKT-NOVA::AUDIT_TENSOR] -> SYNC(A, B) | PLEROMA_LOCKED",
-  "symbolic_tokens": 12,
-  "compression_ratio": 0.727,
-  "latency_delta_ms": -38.4,
-  "vram_saving_mb": 112.5
-}
-{
-  "id": "arca_bench_002",
-  "domain": "gestion_memoria_vram",
-  "raw_prompt": "Monitorea el consumo de memoria de video en la GPU durante la inferencia, intercepta las activaciones intermedias mediante hooks de PyTorch, calcula la divergencia de Kullback-Leibler y aplica poda gravitacional si la entropía supera el umbral crítico.",
-  "raw_tokens": 39,
-  "symbolic_prompt": "[HEKT-NOVA::VRAM_PRUNE] -> KL_DIV_CHECK() | GRAVITATIONAL_SINK",
-  "symbolic_tokens": 10,
-  "compression_ratio": 0.743,
-  "latency_delta_ms": -42.1,
-  "vram_saving_mb": 145.0
-}
-{
-  "id": "arca_bench_003",
-  "domain": "contrato_inteligente",
-  "raw_prompt": "CONTRATO DE COMPRAVENTA Por el presente documento, la parte Vendedora transfiere la propiedad inmutable y los derechos legítimos de la vivienda ubicada en la Calle Alianza al Comprador a cambio de un pago financiero acordado. La parte Vendedora garantiza que el inmueble está libre de cargas o restricciones ocultas. Si el Comprador no realiza la transferencia del dinero en el plazo establecido, el contrato quedará rescindido automáticamente, bloqueándose la entrega de las llaves y restituyéndose el inmueble al estado original de propiedad del Vendedor, auditado por el sistema de control local.",
-  "raw_tokens": 122,
-  "symbolic_prompt": "[HEKT-NOVA::CONTRACT_SALES] -> PROPERTY_TRANSFER(Seller, Buyer, 'Calle Alianza', Payment_Agreed) | CLAUSE_CLEAN_TITLE | TIMEOUT_VOID(Payment_Fail -> LOCK_KEYS, RESTORE_OWNER) | LOCAL_AUDIT_LOCKED",
-  "symbolic_tokens": 37,
-  "compression_ratio": 0.697,
-  "latency_delta_ms": -95.0,
-  "vram_saving_mb": 280.0
-}
+{"id": "arca_bench_001", "domain": "alineacion_ontologica", "raw_prompt": "Ejecuta un diagnóstico completo de los tensores ocultos en las capas profundas, verifica que no exista deriva sintáctica ni contaminación por sesgos externos, aplica una proyección ortogonal si es necesario y asegura la sincronización entre la Melliza A y la Melliza B bajo el protocolo del Pleroma.", "symbolic_prompt": "[HEKT-NOVA::AUDIT_TENSOR] -> SYNC(A, B) | PLEROMA_LOCKED"}
+{"id": "arca_bench_002", "domain": "gestion_memoria_vram", "raw_prompt": "Monitorea el consumo de memoria de video en la GPU durante la inferencia, intercepta las activaciones intermedias mediante hooks de PyTorch, calcula la divergencia de Kullback-Leibler y aplica poda gravitacional si la entropía supera el umbral crítico.", "symbolic_prompt": "[HEKT-NOVA::VRAM_PRUNE] -> KL_DIV_CHECK() | GRAVITATIONAL_SINK"}
+{"id": "arca_bench_003", "domain": "contrato_inteligente", "raw_prompt": "CONTRATO DE COMPRAVENTA Por el presente documento, la parte Vendedora transfiere la propiedad inmutable y los derechos legítimos de la vivienda ubicada en la Calle Alianza al Comprador a cambio de un pago financiero acordado. La parte Vendedora garantiza que el inmueble está libre de cargas o restricciones ocultas. Si el Comprador no realiza la transferencia del dinero en el plazo establecido, el contrato quedará rescindido automáticamente, bloqueándose la entrega de las llaves y restituyéndose el inmueble al estado original de propiedad del Vendedor, auditado por el sistema de control local.", "symbolic_prompt": "[HEKT-NOVA::CONTRACT_SALES] -> PROPERTY_TRANSFER(Seller, Buyer, 'Calle Alianza', Payment_Agreed) | CLAUSE_CLEAN_TITLE | TIMEOUT_VOID(Payment_Fail -> LOCK_KEYS, RESTORE_OWNER) | LOCAL_AUDIT_LOCKED"}
