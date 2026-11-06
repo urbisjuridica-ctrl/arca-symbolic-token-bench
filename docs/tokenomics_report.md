@@ -1,24 +1,24 @@
-# Reporte de Tokenomics y Eficiencia - HEKT-NOVA
+# Reporte de Tokenomics y Eficiencia - HEKT-NOVA v2.1 (Compact)
 *Generado automáticamente el 2026-11-06*
 
-Este documento detalla el análisis de compresión de tokens, el coste estructural del diccionario y el punto de equilibrio (*break-even*) del protocolo **HEKT-NOVA** evaluado sobre el benchmark completo.
+Este documento detalla el análisis de compresión de tokens optimizado mediante el diccionario compacto `[H::...]`, evaluando el coste estructural y el punto de equilibrio (*break-even*) del protocolo **HEKT-NOVA**.
 
 ---
 
-## 📊 Resumen Ejecutivo
+## 📊 Resumen Ejecutivo (v2.1)
 
 * **Total de dominios evaluados:** 12
 * **Tokens acumulados (Lenguaje Natural):** `1098`
-* **Tokens acumulados (Simbólico HEKT-NOVA):** `651`
-* **Ahorro neto medio por llamada:** `37.25 tokens`
+* **Tokens acumulados (Simbólico Compacto):** `629`
+* **Ahorro neto medio por llamada:** `39.08 tokens`
 * **Coste estructural fijo del diccionario:** `145 tokens`
-* **Punto de Equilibrio (Break-Even):** **`3.89 invocaciones`** *(Amortización a partir de la 4ª llamada)*
+* **Punto de Equilibrio (Break-Even):** **`3.71 invocaciones`**
 
 ---
 
 ## 📋 Rendimiento por Dominio
 
-| Dominio | Tokens Naturales | Tokens Simbólicos | Ahorro (%) |
+| Dominio | Tokens Naturales | Tokens Compactos | Ahorro (%) |
 | :--- | :---: | :---: | :---: |
 | `alineacion_ontologica` | 89 | 33 | **62.9%** |
 | `gestion_memoria_vram` | 70 | 36 | **48.6%** |
@@ -31,12 +31,12 @@ Este documento detalla el análisis de compresión de tokens, el coste estructur
 | `arquitectura_agentes` | 85 | 54 | **36.5%** |
 | `analisis_tensores` | 89 | 59 | **33.7%** |
 | `orquestacion_nodos` | 80 | 53 | **33.8%** |
-| `criptografia_post_cuantica` | 84 | 60 | **28.6%** |
+| `criptografia_post_cuantica` | 84 | 38 | **54.8%** |
 
 ---
 
-## 🛠️ Notas Metodológicas
+## 🛠️ Notas Metodológicas (Diccionario Compacto)
 1. **Tokenizador Base:** `hf-internal-testing/llama-tokenizer`.
-2. **Overhead del Diccionario:** Corresponde a la inyección de definiciones semánticas de primitivas en el contexto de sistema o caché KV.
+2. **Optimización Léxica:** Sustitución de namespaces extensos por acrónimos `[H::...]` para mitigar la fragmentación de subtokens en BPE.
 3. **Fórmula de Break-Even:** 
    `Invocaciones = Coste Diccionario / Ahorro Neto Promedio`
