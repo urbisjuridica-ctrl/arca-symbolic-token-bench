@@ -1,4 +1,4 @@
-name: Validar Dataset JSONL
+name: Validar y Evaluar Benchmark HEKT-NOVA
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  validate:
+  benchmark-ci:
     runs-on: ubuntu-latest
 
     steps:
@@ -18,6 +18,11 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: '3.12'
+
+    - name: Instalar dependencias del proyecto
+      run: |
+        python -m pip install --upgrade pip
+        pip install transformers huggingface_hub matplotlib numpy
 
     - name: Validar sintaxis estricta de JSONL
       run: |
@@ -30,26 +35,27 @@ jobs:
         errors = 0
         total_lines = 0
 
-        try:
-            with open(file_path, "r", encoding="utf-8") as f:
-                for idx, line in enumerate(f, 1):
-                    line_str = line.strip()
-                    if not line_str:
-                        continue
-                    total_lines += 1
-                    try:
-                        json.loads(line_str)
-                    except json.JSONDecodeError as e:
-                        print(f"Error de sintaxis en línea {idx}: {e}")
-                        errors += 1
+        with open(file_path, "r", encoding="utf-8") as f:
+            for idx, line in enumerate(f, 1):
+                line_str = line.strip()
+                if not line_str:
+                    continue
+                total_lines += 1
+                try:
+                    json.loads(line_str)
+                except json.JSONDecodeError as e:
+                    print(f"Error de sintaxis en línea {idx}: {e}")
+                    errors += 1
 
-            print(f"Total de registros validados: {total_lines}")
-            if errors > 0:
-                print(f"Validación FALLIDA: Se encontraron {errors} errores.")
-                sys.exit(1)
-            else:
-                print("Validación EXITOSA: Todas las líneas son JSON válido.")
-        except Exception as ex:
-            print(f"Error crítico al leer el archivo: {ex}")
+        print(f"Total de registros validados: {total_lines}")
+        if errors > 0:
+            print(f"Validación FALLIDA: Se encontraron {errors} errores.")
             sys.exit(1)
+        else:
+            print("Validación EXITOSA: Todas las líneas son JSON válido.")
         '
+
+    - name: Ejecutar script de evaluación de compresión
+      run: |
+        echo "Ejecutando evaluate_compression.py..."
+        python scripts/evaluate_compression.py
