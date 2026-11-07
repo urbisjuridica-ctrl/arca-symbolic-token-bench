@@ -7,12 +7,12 @@ Este documento detalla el análisis de compresión de tokens optimizado mediante
 
 ## 📊 Resumen Ejecutivo (v2.1)
 
-* **Total de dominios evaluados:** 12
-* **Tokens acumulados (Lenguaje Natural):** `1098`
-* **Tokens acumulados (Simbólico Compacto):** `629`
-* **Ahorro neto medio por llamada:** `39.08 tokens`
+* **Total de dominios evaluados:** 16
+* **Tokens acumulados (Lenguaje Natural):** `1233`
+* **Tokens acumulados (Simbólico Compacto):** `683`
+* **Ahorro neto medio por llamada:** `34.38 tokens`
 * **Coste estructural fijo del diccionario:** `145 tokens`
-* **Punto de Equilibrio (Break-Even):** **`3.71 invocaciones`**
+* **Punto de Equilibrio (Break-Even):** **`4.22 invocaciones`**
 
 ---
 
@@ -32,6 +32,10 @@ Este documento detalla el análisis de compresión de tokens optimizado mediante
 | `analisis_tensores` | 89 | 59 | **33.7%** |
 | `orquestacion_nodos` | 80 | 53 | **33.8%** |
 | `criptografia_post_cuantica` | 84 | 38 | **54.8%** |
+| `telemetry` | 34 | 15 | **55.9%** |
+| `routing` | 35 | 16 | **54.3%** |
+| `security` | 32 | 10 | **68.8%** |
+| `ollama` | 34 | 13 | **61.8%** |
 
 ---
 
