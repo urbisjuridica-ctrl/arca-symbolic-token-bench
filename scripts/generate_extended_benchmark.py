@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
 """
-Generador del Banco de Pruebas Núcleo v2.3 para HEKT-NOVA.
-Construye un dataset basado exclusivamente en núcleos técnicos únicos y diversos,
-descartando variantes artificiales y asegurando paridad lingüística real (ES/EN).
+Generador del Banco de Pruebas Núcleo v2.3 Extendido para HEKT-NOVA.
+Incorpora 20 núcleos técnicos únicos y diversos (8 iniciales de Grok + 12 nuevos dominios),
+garantizando cero variantes artificiales y alta paridad lingüística real (ES/EN).
 """
 
 import json
 import os
 
-# Banco de núcleos técnicos reales, diversos y sin relleno artificial
+# Banco expandido de 20 núcleos técnicos reales sin relleno
 CASOS_NUCLEO = [
+    # --- NÚCLEOS DE BASE (1-8) ---
     {
         "id": "HEKT-CORE-001",
         "domain": "cybersecurity",
@@ -89,11 +90,132 @@ CASOS_NUCLEO = [
         "task_type": "endpoint_design",
         "raw_prompt": "Design a clean REST endpoint to let a user revoke all active sessions except the current one. It should be safe, idempotent and return how many sessions were revoked.",
         "compressed_payload": "[H::API] ENDPOINT DELETE /users/me/sessions?except=current auth=required idempotent=true response={revoked_count}"
+    },
+    # --- NUEVOS DOMINIOS AÑADIDOS (9-20) ---
+    {
+        "id": "HEKT-CORE-009",
+        "domain": "network_infrastructure",
+        "symbolic_namespace": "[H::NET]",
+        "complexity": 2,
+        "language_parity": ["es"],
+        "task_type": "firewall_rule",
+        "raw_prompt": "Necesito bloquear todo el tráfico entrante a la subred 10.0.4.0/24 excepto el tráfico HTTPS en el puerto 443 desde la VPN corporativa 192.168.100.0/24. Genera la política IPTables adecuada.",
+        "compressed_payload": "[H::NET] RULE default_action=DROP target=10.0.4.0/24 allow=[src=192.168.100.0/24 dport=443 proto=tcp] tool=iptables"
+    },
+    {
+        "id": "HEKT-CORE-010",
+        "domain": "cloud_infrastructure",
+        "symbolic_namespace": "[H::CLOUD]",
+        "complexity": 3,
+        "language_parity": ["en"],
+        "task_type": "iac_provisioning",
+        "raw_prompt": "Provision an AWS S3 bucket with strict encryption at rest using AWS KMS, block all public access, and configure a lifecycle policy to transition objects to Glacier after 90 days.",
+        "compressed_payload": "[H::CLOUD] AWS_S3 bucket_policy encryption=KMS public_access=block lifecycle=[transition_glacier age=90d] provider=terraform"
+    },
+    {
+        "id": "HEKT-CORE-011",
+        "domain": "devops",
+        "symbolic_namespace": "[H::DEVOPS]",
+        "complexity": 2,
+        "language_parity": ["es"],
+        "task_type": "pipeline_optimization",
+        "raw_prompt": "El pipeline de GitHub Actions tarda 18 minutos compilando imágenes Docker multi-stage. Queremos aprovechar la caché de Docker Layer y la caché de dependencias de Maven para bajar de 5 minutos.",
+        "compressed_payload": "[H::DEVOPS] GITHUB_ACTIONS optimize target_time<5m strategy=[buildkit_cache, maven_deps_cache] runner=ubuntu-latest"
+    },
+    {
+        "id": "HEKT-CORE-012",
+        "domain": "distributed_systems",
+        "symbolic_namespace": "[H::DIST]",
+        "complexity": 3,
+        "language_parity": ["en"],
+        "task_type": "consensus_analysis",
+        "raw_prompt": "We are evaluating Raft vs Paxos for our distributed metadata store requiring leader election, linearizable reads, and network partition resilience across 5 nodes.",
+        "compressed_payload": "[H::DIST] CONSENSUS nodes=5 requirements=[leader_election, linearizable_reads, partition_tolerance] evaluate=[Raft, Paxos]"
+    },
+    {
+        "id": "HEKT-CORE-013",
+        "domain": "container_orchestration",
+        "symbolic_namespace": "[H::K8S]",
+        "complexity": 2,
+        "language_parity": ["es"],
+        "task_type": "k8s_deployment",
+        "raw_prompt": "Configura un HorizontalPodAutoscaler en Kubernetes para el Deployment 'payment-service'. Escalado basado en 70% CPU o 80% Memoria, mínimo 3 pods y máximo 15 pods.",
+        "compressed_payload": "[H::K8S] HPA deployment=payment-service target_cpu=70% target_mem=80% replicas=[min=3, max=15]"
+    },
+    {
+        "id": "HEKT-CORE-014",
+        "domain": "sec_audit",
+        "symbolic_namespace": "[H::SEC_AUDIT]",
+        "complexity": 3,
+        "language_parity": ["en"],
+        "task_type": "crypto_review",
+        "raw_prompt": "Audit this authentication token protocol. It currently uses JWT signed with HS256 and has a 24-hour expiration time without refresh token rotation. Suggest hardening measures.",
+        "compressed_payload": "[H::SEC_AUDIT] AUDIT jwt_auth current=[alg=HS256, exp=24h, refresh_rotation=false] recommend=[alg=RS256, exp=15m, refresh_rotation=true]"
+    },
+    {
+        "id": "HEKT-CORE-015",
+        "domain": "data_engineering",
+        "symbolic_namespace": "[H::DATA_ENG]",
+        "complexity": 3,
+        "language_parity": ["es"],
+        "task_type": "stream_processing",
+        "raw_prompt": "Diseña un job en Apache Flink para procesar telemetría IoT desde Kafka. Aplicar ventana deslizante de 5 minutos con paso de 1 minuto y guardar el P99 de temperatura por dispositivo en ClickHouse.",
+        "compressed_payload": "[H::DATA_ENG] FLINK stream_job src=Kafka sink=ClickHouse window=[sliding length=5m slide=1m] agg=P99(temperature) group_by=device_id"
+    },
+    {
+        "id": "HEKT-CORE-016",
+        "domain": "compiler",
+        "symbolic_namespace": "[H::COMPILER]",
+        "complexity": 3,
+        "language_parity": ["en"],
+        "task_type": "opt_pass",
+        "raw_prompt": "Optimize this LLVM IR pass for loop unrolling and dead code elimination on CPU vector instruction targets with AVX-512 extensions.",
+        "compressed_payload": "[H::COMPILER] LLVM_PASS target=AVX-512 passes=[loop_unroll, dead_code_elimination] opt_level=O3"
+    },
+    {
+        "id": "HEKT-CORE-017",
+        "domain": "embedded",
+        "symbolic_namespace": "[H::EMBEDDED]",
+        "complexity": 2,
+        "language_parity": ["es"],
+        "task_type": "rtos_task",
+        "raw_prompt": "Configura una tarea FreeRTOS de alta prioridad para muestrear un sensor SPI a 1 kHz, enviando lecturas a una cola segura sin bloquear la interrupción del sistema.",
+        "compressed_payload": "[H::EMBEDDED] FREERTOS task priority=HIGH trigger=SPI_1kHz output_queue=isr_safe max_latency_us=500"
+    },
+    {
+        "id": "HEKT-CORE-018",
+        "domain": "observability",
+        "symbolic_namespace": "[H::OBSERV]",
+        "complexity": 2,
+        "language_parity": ["en"],
+        "task_type": "tracing_spec",
+        "raw_prompt": "Configure OpenTelemetry distributed tracing context propagation over gRPC headers, with 10% probabilistic sampling in production.",
+        "compressed_payload": "[H::OBSERV] OPENTELEMETRY tracer transport=gRPC propagation=w3c_tracecontext sampling=[probabilistic rate=0.10]"
+    },
+    {
+        "id": "HEKT-CORE-019",
+        "domain": "storage",
+        "symbolic_namespace": "[H::STORAGE]",
+        "complexity": 3,
+        "language_parity": ["es"],
+        "task_type": "cluster_config",
+        "raw_prompt": "Modelar un clúster Ceph con pool de objetos utilizando Erasure Coding 4+2 para optimizar la capacidad sin perder tolerancia a fallo de hasta 2 nodos concurrentes.",
+        "compressed_payload": "[H::STORAGE] CEPH pool_type=erasure_coding scheme=4+2 max_fault_tolerance=2_nodes workload=object_store"
+    },
+    {
+        "id": "HEKT-CORE-020",
+        "domain": "quantitative_finance",
+        "symbolic_namespace": "[H::QUANT]",
+        "complexity": 3,
+        "language_parity": ["en"],
+        "task_type": "risk_engine",
+        "raw_prompt": "Calculate Monte Carlo Value at Risk (VaR) at 99% confidence interval over a 10-day horizon for a multi-asset crypto portfolio with GARCH volatility modeling.",
+        "compressed_payload": "[H::QUANT] VAR_ENGINE method=Monte_Carlo confidence=0.99 horizon=10d volatility=GARCH asset_class=crypto"
     }
 ]
 
 def main():
-    print(f"Generando dataset purificado v2.3 con {len(CASOS_NUCLEO)} núcleos únicos...")
+    print(f"Generando dataset purificado v2.3 con {len(CASOS_NUCLEO)} núcleos técnicos únicos...")
     os.makedirs("data", exist_ok=True)
     ruta_salida = "data/arca_symbolic_benchmark_extended.jsonl"
     
@@ -101,7 +223,7 @@ def main():
         for c in CASOS_NUCLEO:
             f.write(json.dumps(c, ensure_ascii=False) + "\n")
 
-    print(f"[OK] Dataset núcleo v2.3 generado exitosamente en: {ruta_salida}")
+    print(f"[OK] Dataset núcleo v2.3 expandido guardado exitosamente en: {ruta_salida}")
 
 if __name__ == "__main__":
     main()
