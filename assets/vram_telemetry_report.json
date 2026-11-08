@@ -1,0 +1,30 @@
+[
+    {
+        "timestamp": "2026-11-06 19:15:20",
+        "domain": "gestion_memoria_vram",
+        "vram_allocated_mb": 1420.5,
+        "vram_peak_mb": 2150.0,
+        "status": "OPTIMIZED_HEKT_NOVA"
+    },
+    {
+        "timestamp": "2026-11-06 19:15:20",
+        "domain": "optimizacion_ollama",
+        "vram_allocated_mb": 3890.2,
+        "vram_peak_mb": 4800.5,
+        "status": "OPTIMIZED_HEKT_NOVA"
+    },
+    {
+        "timestamp": "2026-11-06 19:15:20",
+        "domain": "analisis_tensores",
+        "vram_allocated_mb": 4210.8,
+        "vram_peak_mb": 5920.1,
+        "status": "OPTIMIZED_HEKT_NOVA"
+    },
+    {
+        "timestamp": "2026-11-06 19:15:20",
+        "domain": "orquestacion_nodos",
+        "vram_allocated_mb": 1150.0,
+        "vram_peak_mb": 1650.0,
+        "status": "OPTIMIZED_HEKT_NOVA"
+    }
+]

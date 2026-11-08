@@ -1,0 +1,61 @@
+name: Validar y Evaluar Benchmark HEKT-NOVA
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  benchmark-ci:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Clonar repositorio
+      uses: actions/checkout@v4
+
+    - name: Configurar entorno de Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+
+    - name: Instalar dependencias del proyecto
+      run: |
+        python -m pip install --upgrade pip
+        pip install transformers huggingface_hub matplotlib numpy
+
+    - name: Validar sintaxis estricta de JSONL
+      run: |
+        echo "Iniciando validación del archivo JSONL..."
+        python -c '
+        import json
+        import sys
+
+        file_path = "data/arca_symbolic_benchmark.jsonl"
+        errors = 0
+        total_lines = 0
+
+        with open(file_path, "r", encoding="utf-8") as f:
+            for idx, line in enumerate(f, 1):
+                line_str = line.strip()
+                if not line_str:
+                    continue
+                total_lines += 1
+                try:
+                    json.loads(line_str)
+                except json.JSONDecodeError as e:
+                    print(f"Error de sintaxis en línea {idx}: {e}")
+                    errors += 1
+
+        print(f"Total de registros validados: {total_lines}")
+        if errors > 0:
+            print(f"Validación FALLIDA: Se encontraron {errors} errores.")
+            sys.exit(1)
+        else:
+            print("Validación EXITOSA: Todas las líneas son JSON válido.")
+        '
+
+    - name: Ejecutar script de evaluación de compresión
+      run: |
+        echo "Ejecutando evaluate_compression.py..."
+        python scripts/evaluate_compression.py
