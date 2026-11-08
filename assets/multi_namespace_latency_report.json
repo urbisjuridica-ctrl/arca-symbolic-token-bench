@@ -6,6 +6,6 @@
     ],
     "input_tokens": 26,
     "output_tokens": 118,
-    "latency_ms": 215.15594283118844,
+    "latency_ms": 215.07375314831734,
     "status": "stable"
 }
